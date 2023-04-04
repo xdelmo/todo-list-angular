@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <h1>Welcome to {{ title }}!</h1>
-    <app-list-manager></app-list-manager>
+    <button routerLink="/">Home</button>
+    <button routerLink="list">Liste</button>
+    <router-outlet></router-outlet>
   `,
   styleUrls: ['./app.component.scss'],
 })
