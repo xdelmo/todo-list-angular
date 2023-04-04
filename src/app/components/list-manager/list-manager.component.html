@@ -1,0 +1,11 @@
+<app-input-button-unit (newItemEvent)="addElemToList($event)"></app-input-button-unit>
+
+
+<ul class="list-group">
+    <li *ngFor="let todoItem of todoList; let i = index" class="list-group-item">
+        <input [(ngModel)]="todoItem.completed" class="form-check-input me-1" type="checkbox" [id]=" i">
+        <label class="form-check-label" [ngClass]="{'form-check-label-completed': todoItem.completed }" [for]="i">
+            <app-todo-item [itemContent]="todoItem"></app-todo-item>
+        </label>
+    </li>
+</ul>

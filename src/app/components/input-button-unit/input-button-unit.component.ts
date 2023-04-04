@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-button-unit',
@@ -18,7 +18,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
       Save
     </button>
   `,
-
   styleUrls: ['./input-button-unit.component.scss'],
 })
 export class InputButtonUnitComponent {
