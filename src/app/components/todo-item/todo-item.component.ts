@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Content } from 'src/app/models/content.model';
+import { ItemList } from 'src/app/models/content.model';
 
 @Component({
   selector: 'app-todo-item',
@@ -7,5 +7,6 @@ import { Content } from 'src/app/models/content.model';
   styleUrls: ['./todo-item.component.scss'],
 })
 export class TodoItemComponent {
-  @Input() itemContent: Content = { title: '' };
+  @Input()
+  itemContent: ItemList = { title: '' };
 }

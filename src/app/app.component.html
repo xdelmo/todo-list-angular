@@ -1,9 +1,8 @@
-<app-input-button-unit [titleChildren]="title"></app-input-button-unit>
+<app-input-button-unit (newItemEvent)="addElemToList($event)"></app-input-button-unit>
 
 <ul>
     <li *ngFor="let todoItem of todoList">
-        <app-todo-item [itemContent]="todoItem"> </app-todo-item>
-
+        <app-todo-item [itemContent]="todoItem"></app-todo-item>
     </li>
-
 </ul>
+<button (click)="addElemToList('Button clicked')">Button</button>

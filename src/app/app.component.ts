@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ItemList } from './models/content.model';
 
 @Component({
   selector: 'app-root',
@@ -18,5 +19,10 @@ export class AppComponent {
 
   interceptorEvent(eventValue: any) {
     this.title = eventValue;
+  }
+
+  addElemToList(newTitle: string) {
+    const newItem: ItemList = { title: newTitle, completed: false };
+    this.todoList.push(newItem);
   }
 }
