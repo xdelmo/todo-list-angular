@@ -21,7 +21,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
   styleUrls: ['./input-button-unit.component.scss'],
 })
-
 export class InputButtonUnitComponent implements OnInit {
   title2 = 'Hello World';
   title3 = 'Title3';
